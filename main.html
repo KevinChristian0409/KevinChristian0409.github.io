@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="TopSection">
+      <figure>
+        <img src="./myImage.jpg" alt="My Image" width="300" height="330" />
+      </figure>
+
+      <p id="name">KEVIN CHRISTIAN</p>
+      <p id="position">Web Application Developer</p>
+
+      <div class="buttons">
+        <button class="button resume">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <a href="./myResume.pdf" download>Resume</a>
+        </button>
+        <button class="button contactMe">
+          <a href="#contactMeContainer">Contact Me</a>
+        </button>
+      </div>
+    </header>
+    <div id="info">
+      <div class="section">
+        <div class="split left">
+          <h1>About Me!</h1>
+          <p>
+            My name is Kevin Atulkumar Christian. I completed my 12th grade back
+            in my home country India. Right now I'm pursuing my career in
+            Computer Science. I'm currently enrolled in "Computer Programming &
+            Analysis" course in Seneca College, Canada. I have excellent
+            communication skills, grasping power and presenting skill for a
+            particular subject. Able to work with colleagues with lots of
+            enthusiasm. I have qualities like Prioritization, Multitasking, and
+            problem-solving abilities in fast paced environment. I'm Experienced
+            with Microsoft Office (Word, Excel, PowerPoint) on Window or Mac OS.
+            I have vast knowledge of C, C++, Javascript, Html, CSS, SQL
+            programming languages.
+          </p>
+        </div>
+
+        <div class="split right">
+          <h1>Basic Information</h1>
+          <p>
+            NAME: Kevin Atulkumar Christian <br /><br />
+            AGE: 19 <br /><br />
+            EMAIL: kchristian2@myseneca.ca<br /><br />
+            LANGUAGE: English, French<br /><br />
+            COURSE: WEB<br /><br />
+            SECTION: NEE<br /><br />
+            STUDENT ID: 159535210<br /><br />
+            INSTRUCTOR: Noman Atique
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="honesty">
+      <h1>Honesty Statement:</h1>
+      <p>
+        I declare that my assessment is wholly my own work in accordance with
+        Seneca Academic Policy. No part of this assessment has been copied
+        manually or electronically from any other source (including web sites)
+        except for the information supplied by the WEB222 instructors and / or
+        made available in this assessment for my use. I also declare that no
+        part of this assignment has been distributed to other students.
+      </p>
+    </div>
+
+    <div class="Education">
+      <h1>Education</h1>
+      <div class="education">
+        <div class="Education leftSide">
+          2022 - 2024 (Expected) <br />
+          Advanced Diploma
+        </div>
+        <div class="Education rightSide">
+          Computer Programming and Analysis (Co-op) <br />
+          Seneca College - Newnham Campus, North York, ON
+        </div>
+      </div>
+    </div>
+    <div id="contactMeContainer">
+      <h1>Contact Me</h1>
+  <form action="https://httpbin.org/post" method="POST">
+      <label for="Name">Name</label>
+      <input
+        type="text"
+        id="Name"
+        name="Name"
+        placeholder="Your name here..."
+        autocomplete="on"
+        required
+      />
+
+      <label for="email">E-mail</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Your email address here..."
+        autocomplete="on"
+        required
+      />
+
+      <label for="phone">Phone Number</label>
+      <input
+        type="text"
+        id="phone"
+        name="phone"
+        placeholder="Your phone number here..."
+        autocomplete="on"
+        required
+      />
+
+      <label for="common-cities">City</label>
+      <input
+        type="text"
+        list="common-cities-name"
+        id="common-cities"
+        name="common-cities"
+        placeholder="Your city here..."
+        required
+      />
+      <datalist id="common-cities-name">
+        <option value="Toronto"></option>
+        <option value="Scarborough"></option>
+        <option value="Vancouver"></option>
+        <option value="Barrie"></option>
+        <option value="North-York"></option>
+      </datalist>
+
+      <label for="postalCode">Postal Code</label>
+      <input
+        type="text"
+        id="postalCode"
+        name="postalCode"
+        placeholder="Your Postal Code here..."
+        autocomplete="on"
+        required
+        pattern="^[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d$"
+      />
+
+      <label for="subject">Subject:</label> <br />
+      <input
+        type="radio"
+        id="Question"
+        name="Selection"
+        onclick="onChangeRadio('Question')"
+        value="Question"
+        required
+      />
+
+      <label for="Question">Question</label>
+      <input
+        type="radio"
+        id="Comment"
+        name="Selection"
+        onclick="onChangeRadio('Comment')"
+        value="Comment"
+        required
+      />
+      <label for="Comment">Comment</label>
+      <input
+        type="radio"
+        id="Hiring"
+        name="Selection"
+        onclick="onChangeRadio('Hiring')"
+        value="Hiring"
+        required
+      />
+      <label for="Hiring">Hiring</label>
+      <textarea
+        id="subject"
+        name="subject"
+        placeholder="Write here..."
+        style="height: 180px"
+        required
+      ></textarea>
+
+      <div id="hourlyRate"></div>
+
+      <input type="submit" placeholder="Submit" />
+    </div>
+  </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
