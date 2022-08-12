@@ -139,6 +139,14 @@ a {
   margin-left: 130px;
 }
 
+.information-table tr,
+.information-table td {
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
 #info {
   background-color: whitesmoke;
   padding-top: 25px;

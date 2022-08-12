@@ -23,14 +23,15 @@
       <div class="buttons">
         <button class="button resume">
           <i class="fa-solid fa-file-arrow-down"></i>
-          <a href="./myResume.pdf" download>Resume</a>
+          <a href="./myResume.pdf" download="Kevin's Resume">Resume</a>
         </button>
         <button class="button contactMe">
           <a href="#contactMeContainer">Contact Me</a>
         </button>
       </div>
     </header>
-    <div id="info">
+
+    <main id="info">
       <div class="section">
         <div class="split left">
           <h1>About Me!</h1>
@@ -44,26 +45,53 @@
             enthusiasm. I have qualities like Prioritization, Multitasking, and
             problem-solving abilities in fast paced environment. I'm Experienced
             with Microsoft Office (Word, Excel, PowerPoint) on Window or Mac OS.
-            I have vast knowledge of C, C++, Javascript, Html, CSS, SQL
+            I have vast knowledge of C, C++, Javascript,
+            <abbr title="Hypertext Markup Language">Html</abbr>,
+            <abbr title="Cascading Style Sheets">CSS</abbr>,
+            <abbr title="Structured Query Language">SQL</abbr>
             programming languages.
           </p>
         </div>
 
         <div class="split right">
           <h1>Basic Information</h1>
-          <p>
-            NAME: Kevin Atulkumar Christian <br /><br />
-            AGE: 19 <br /><br />
-            EMAIL: kchristian2@myseneca.ca<br /><br />
-            LANGUAGE: English, French<br /><br />
-            COURSE: WEB<br /><br />
-            SECTION: NEE<br /><br />
-            STUDENT ID: 159535210<br /><br />
-            INSTRUCTOR: Noman Atique
-          </p>
+          <table class="information-table">
+            <tr>
+              <td><strong>NAME:</strong></td>
+              <td>Kevin Atulkumar Christian</td>
+            </tr>
+            <tr>
+              <td><strong>AGE:</strong></td>
+              <td>19</td>
+            </tr>
+            <tr>
+              <td><strong>EMAIL:</strong></td>
+              <td>kchristian2@myseneca.ca</td>
+            </tr>
+            <tr>
+              <td><strong>LANGUAGE:</strong></td>
+              <td>English, French</td>
+            </tr>
+            <tr>
+              <td><strong>COURSE:</strong></td>
+              <td>WEB222</td>
+            </tr>
+            <tr>
+              <td><strong>SECTION:</strong></td>
+              <td>NEE</td>
+            </tr>
+            <tr>
+              <td><strong>STUDENT ID:</strong></td>
+              <td>159535210</td>
+            </tr>
+            <tr>
+              <td><strong>INSTRUCTOR:</strong></td>
+              <td>Noman Atique</td>
+            </tr>
+          </table>
         </div>
       </div>
-    </div>
+    </main>
 
     <div id="honesty">
       <h1>Honesty Statement:</h1>
@@ -90,109 +118,110 @@
         </div>
       </div>
     </div>
-    <div id="contactMeContainer">
+
+    <footer id="contactMeContainer">
       <h1>Contact Me</h1>
-  <form action="https://httpbin.org/post" method="POST">
-      <label for="Name">Name</label>
-      <input
-        type="text"
-        id="Name"
-        name="Name"
-        placeholder="Your name here..."
-        autocomplete="on"
-        required
-      />
+      <form action="https://httpbin.org/post" method="POST">
+        <label for="Name">Name</label>
+        <input
+          type="text"
+          id="Name"
+          name="Name"
+          placeholder="Your name here..."
+          autocomplete="on"
+          required
+        />
 
-      <label for="email">E-mail</label>
-      <input
-        type="text"
-        id="email"
-        name="email"
-        placeholder="Your email address here..."
-        autocomplete="on"
-        required
-      />
+        <label for="email">E-mail</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Your email address here..."
+          autocomplete="on"
+          required
+        />
 
-      <label for="phone">Phone Number</label>
-      <input
-        type="text"
-        id="phone"
-        name="phone"
-        placeholder="Your phone number here..."
-        autocomplete="on"
-        required
-      />
+        <label for="phone">Phone Number</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="Your phone number here..."
+          autocomplete="on"
+          required
+        />
 
-      <label for="common-cities">City</label>
-      <input
-        type="text"
-        list="common-cities-name"
-        id="common-cities"
-        name="common-cities"
-        placeholder="Your city here..."
-        required
-      />
-      <datalist id="common-cities-name">
-        <option value="Toronto"></option>
-        <option value="Scarborough"></option>
-        <option value="Vancouver"></option>
-        <option value="Barrie"></option>
-        <option value="North-York"></option>
-      </datalist>
+        <label for="common-cities">City</label>
+        <input
+          type="text"
+          list="common-cities-name"
+          id="common-cities"
+          name="common-cities"
+          placeholder="Your city here..."
+          required
+        />
+        <datalist id="common-cities-name">
+          <option value="Toronto"></option>
+          <option value="Scarborough"></option>
+          <option value="Vancouver"></option>
+          <option value="Barrie"></option>
+          <option value="North-York"></option>
+        </datalist>
 
-      <label for="postalCode">Postal Code</label>
-      <input
-        type="text"
-        id="postalCode"
-        name="postalCode"
-        placeholder="Your Postal Code here..."
-        autocomplete="on"
-        required
-        pattern="^[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d$"
-      />
+        <label for="postalCode">Postal Code</label>
+        <input
+          type="text"
+          id="postalCode"
+          name="postalCode"
+          placeholder="Your Postal Code here..."
+          autocomplete="on"
+          required
+          pattern="^[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d$"
+        />
 
-      <label for="subject">Subject:</label> <br />
-      <input
-        type="radio"
-        id="Question"
-        name="Selection"
-        onclick="onChangeRadio('Question')"
-        value="Question"
-        required
-      />
+        <label for="subject">Subject:</label> <br />
+        <input
+          type="radio"
+          id="Question"
+          name="Selection"
+          onclick="onChangeRadio('Question')"
+          value="Question"
+          required
+        />
 
-      <label for="Question">Question</label>
-      <input
-        type="radio"
-        id="Comment"
-        name="Selection"
-        onclick="onChangeRadio('Comment')"
-        value="Comment"
-        required
-      />
-      <label for="Comment">Comment</label>
-      <input
-        type="radio"
-        id="Hiring"
-        name="Selection"
-        onclick="onChangeRadio('Hiring')"
-        value="Hiring"
-        required
-      />
-      <label for="Hiring">Hiring</label>
-      <textarea
-        id="subject"
-        name="subject"
-        placeholder="Write here..."
-        style="height: 180px"
-        required
-      ></textarea>
+        <label for="Question">Question</label>
+        <input
+          type="radio"
+          id="Comment"
+          name="Selection"
+          onclick="onChangeRadio('Comment')"
+          value="Comment"
+          required
+        />
+        <label for="Comment">Comment</label>
+        <input
+          type="radio"
+          id="Hiring"
+          name="Selection"
+          onclick="onChangeRadio('Hiring')"
+          value="Hiring"
+          required
+        />
+        <label for="Hiring">Hiring</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write here..."
+          style="height: 180px"
+          required
+        ></textarea>
 
-      <div id="hourlyRate"></div>
+        <div id="hourlyRate"></div>
 
-      <input type="submit" placeholder="Submit" />
-    </div>
-  </form>
+        <input type="submit" />
+      </form>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>

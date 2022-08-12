@@ -1,5 +1,5 @@
 var radioValue = "";
-console.log(onChangeRadio);
+
 function onChangeRadio(value) {
   if (value != radioValue) {
     radioValue = value;
